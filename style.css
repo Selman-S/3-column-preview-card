@@ -8,13 +8,7 @@
 /* font-family: 'Big Shoulders Display', cursive;
 font-family: 'Lexend Deca', sans-serif; */
 
-h6 {
-    color:hsl(31, 77%, 52%)
-     hsl(184, 100%, 22%)
-    hsl(179, 100%, 13%)
-    hsla(0, 0%, 100%, 0.75)
-    hsl(0, 0%, 95%)
-}
+
 body {
     font-size:15px;
     display:flex;
@@ -68,7 +62,7 @@ button {
     margin-top:70px;
     width:150px;
     height: 45px;
-    border:1px solid #fff;
+    border:1px solid hsl(0, 0%, 95%);
     border-radius:25px;
     background-color:hsl(0, 0%, 95%);
     font-family: 'Lexend Deca', sans-serif;
