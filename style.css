@@ -1,137 +1,105 @@
-@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
-
-
-
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
 
 * {
-    
     margin:0;
-    padding:0;
+    padding: 0;
     box-sizing: border-box;
 }
-body {
-    font-size: 15px;
-    
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    height:100vh;
-    background-color:hsl(0, 0%, 95%);
-}
+/* font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif; */
 
-h1 {
-    font-family: 'Big Shoulders Display', cursive;
-    text-transform: uppercase;
-    color: hsl(0, 0%, 95%);
-    font-size: 2.5rem;
-    margin-top:30px;
-    
-    
+h6 {
+    color:hsl(31, 77%, 52%)
+     hsl(184, 100%, 22%)
+    hsl(179, 100%, 13%)
+    hsla(0, 0%, 100%, 0.75)
+    hsl(0, 0%, 95%)
 }
-p {
-    color:hsla(0, 0%, 100%, 0.60);
-    font-family: 'Lexend Deca', sans-serif;
-    font-size: 15px;
-    margin-top:30px;
-    line-height: 1.6rem;
+body {
+    font-size:15px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+    
 }
 .container {
     display:flex;
     
 }
 .box {
-    width: 300px;
-    padding:45px;
-    height:495px;
-
-}
-.sedans {
-    background-color: hsl(31, 77%, 52%);
-    border-radius: 10px 0 0 10px;
-}
-.suvs {
-    background-color:hsl(184, 100%, 22%);
-}
-.luxury {
-    background-color: hsl(179, 100%, 13%);
-    border-radius: 0 10px 10px 0 ;
-}
-
-.btn {
-    font-family: 'Lexend Deca', sans-serif;
-    margin-top:70px;
-    height:50px;
-    width:150px;
-    line-height: 46px;
-    border:2px solid white;
-    background-color:hsl(0, 0%, 95%);
-    font-size: 15px;
-    border-radius: 25px;
     
+    width: 300px;
+    height: 495px;
+    padding: 45px;
 
 }
 
-.btn1 {
+.box:nth-child(1) {
+    background-color:hsl(31, 77%, 52%);
     color:hsl(31, 77%, 52%);
+    border-radius:10px 0 0 10px;
 }
-.btn1:hover {
-    background-color: hsl(31, 77%, 52%);
-    color: hsl(0, 0%, 95%);
-    cursor: pointer;
-}
-.btn2 {
+.box:nth-child(2) {
+    background-color:hsl(184, 100%, 22%);
     color:hsl(184, 100%, 22%);
 }
-.btn2:hover {
-    background-color:hsl(184, 100%, 22%);
-    color: hsl(0, 0%, 95%);
-    cursor: pointer;
-}
-.btn3 {
-    color:hsl(179, 100%, 13%);
-}
-.btn3:hover {
+.box:nth-child(3) {
     background-color: hsl(179, 100%, 13%);
-    color: hsl(0, 0%, 95%);
+    color:hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+}
+
+h1 {
+    margin-top:30px;
+    color:hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 2.5rem;
+}
+p {
+    color:hsla(0, 0%, 100%, 0.75);
+    margin-top:30px;
+    font-family: 'Lexend Deca', sans-serif;
+    line-height:1.5rem;
+}
+
+button {
+    margin-top:70px;
+    width:150px;
+    height: 45px;
+    border:1px solid #fff;
+    border-radius:25px;
+    background-color:hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size:15px;
+    color:inherit;
+    
+    
+}
+button:hover {
+    background-color:inherit;
+    color:hsl(0, 0%, 95%);
     cursor: pointer;
 }
 
-
-@media (max-width:375px) {
-    body {
-        height:100%;
-    }
+@media (max-width:900px) {
     .container {
-        display: block;
+        flex-direction: column;
         
-        margin:100px;
+        margin:100px auto;
     }
-    .sedans {
-        background-color: hsl(31, 77%, 52%);
-        border-radius: 10px 10px 0 0 ;
+    body {
+        height: 100%;
     }
-    .suvs {
-        background-color:hsl(184, 100%, 22%);
+    .box:nth-child(1) {
+       
+        border-radius:10px 10px 0 0;
     }
-    .luxury {
-        background-color: hsl(179, 100%, 13%);
-        border-radius: 0 0 10px 10px ;
+    
+    .box:nth-child(3) {
+        
+        border-radius: 0 0  10px 10px;
     }
     
 }
-
-
-
-
-
-
-
-
-
-/* ## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px */
